@@ -8,14 +8,14 @@ class ControllerMain extends Controller
 
     public function actionIndex()
     {
-        $this->view->content = array('main');
+        $this->view->content = ['main'];
         $this->view->generate();
     }
 
     protected function access()
     {
         return array(
-            'index'       =>array('*'),
+            'index' =>array('*'),
         );
     }
 }

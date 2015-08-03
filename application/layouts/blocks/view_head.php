@@ -5,7 +5,7 @@
 	<title>OLIJEN</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<!--BASE-->
-	<base href="<?php echo $this->path['site'] ?>"/>
+	<base href="<?php /* echo $this->path['site'] ? $this->path['site'] : '' */ ?>"/>
 	<!--STYLES-->
 	<link rel="stylesheet" type="text/css" href="front/styles/styles.css"/>
 	<!--SCRIPTS-->

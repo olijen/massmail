@@ -50,7 +50,7 @@ class Tools
         define('DB_PWD',  '');
     }
     
-    public function getAccessData()//For special status
+    public static function getAccessData()//For special status
     {
         $G = true;
         $L = $A = false;
