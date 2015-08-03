@@ -1,0 +1,2 @@
+# massmail
+Sendmail. SMTP
