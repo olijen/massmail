@@ -7,7 +7,7 @@ $CONFIG = array(
     'APPDIR'   => $_SERVER['DOCUMENT_ROOT'].'/application',
     'FRONTDIR' => $_SERVER['DOCUMENT_ROOT'].'/front',
     
-    'DB_NAME'  => 'mvc',
+    'DB_NAME'  => 'massmail',
     'DB_USER'  => 'root',
     'DB_HOST'  => 'localhost',
     'DB_PWD'   =>  '',

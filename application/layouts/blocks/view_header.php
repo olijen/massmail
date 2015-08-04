@@ -1,7 +1,7 @@
 <div class="header">
     <a href="/">
 
-        [<span style="color: red;">P</span>ris<span style="color: green;">M</span>  MVC ]
+        MASS MAIL by [ <span style="color: red;">P</span>ris<span style="color: green;">M</span>  MVC ]
         
     </a>
     <div class="login_status">
@@ -53,6 +53,8 @@ echo $notices;
     <div id="topblock">
     	<ul class="topmenu">
     		<li><a href="/">Главная</a></li>
+            <li><a href="/main/create">Создать</a></li>
+            <li><a href="/main/stack">Очередь</a></li>
             <li><a href="/tools/register">Регистрация</a></li>
             <li><a href="/tools/migrate">Установка</a></li>
             <li><a href="/">Информация</a></li>
