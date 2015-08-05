@@ -42,7 +42,7 @@
         </select><br /><br />
 
         <input type="text" name="subject" placeholder="Тема письма" /><br /><br />
-        <textarea name="body" placeholder="Текст письма" cols="30" rows="10" wrap="virtual"></textarea><br /><br />
+        <textarea name="body" placeholder="Текст письма" cols="60" rows="10" wrap="virtual"></textarea><br /><br />
         Приоритет : <br /><select size="1" name="priority">
             <option value="3">Низкий</option>
             <option value="3">Средний</option>
