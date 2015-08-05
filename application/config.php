@@ -8,9 +8,9 @@ $CONFIG = array(
     'FRONTDIR' => $_SERVER['DOCUMENT_ROOT'].'/front',
     
     'DB_NAME'  => 'massmail',
-    'DB_USER'  => 'root',
+    'DB_USER'  => 'igrolanc_root',
     'DB_HOST'  => 'localhost',
-    'DB_PWD'   =>  '',
+    'DB_PWD'   => 'fackofphp5',
     
 );
 

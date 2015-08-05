@@ -1,16 +1,12 @@
 <?php
 
 #Cron
-//include('config');
 
-$realPwd = '11';
-#if (empty($argv[1]) || $argv[1] != $realPwd) exit('Incorrect password');
+include('/application/config.php');
 
-include('../../libs/massmail/mail.php');      // подключаем класс для отправки почты
-include('../../libs/massmail/dbsql.php');     // подключаем класс работа с базой данных
-include('../../libs/massmail/mailStec.php');  // подключаем наш класс отложенной рассылки
-
-include('../../config.php');
+include('/application/libs/massmail/mail.php');      // подключаем класс для отправки почты
+include('/application/libs/massmail/dbsql.php');     // подключаем класс работа с базой данных
+include('/application/libs/massmail/mailStec.php');  // подключаем наш класс отложенной рассылки
 
 // устанавливаем подключение с БД, указав параметры доступа к БД
 $DB=new DB_Engine('mysql', DB_HOST, DB_USER, DB_PWD, DB_NAME);
