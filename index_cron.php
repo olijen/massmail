@@ -1,5 +1,5 @@
 <?php
-
+//echo '$argv[1]' . $argv[1];
 $realPwd = 'sitio666';
 if (empty($argv[1]) || $argv[1] != $realPwd) exit('Incorrect password');
 

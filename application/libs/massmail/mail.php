@@ -60,7 +60,7 @@ class Mail
 	var  $receipt = 0;
 	var  $text_html="text/html"; // (text/plain) формат письма. по умолчанию текстовый
 	var  $smtp_on=false;    // отправка через smtp. по умолчанию выключена
-
+    var $smtp_log=null;
 	/*
 	конструктор тоже по старому объявлен для совместимости со старыми версиями php
 	пошел конструктор.
@@ -378,10 +378,6 @@ class Mail
 				if( $hdr != "Subject" and $hdr != "To") $this->headers .= "$hdr: $value\n"; // пропускаем заголовки кому и тему... они вставятся сами
 			}
 		}
-
-
-
-
 	}
 
 	// включение отправки через smtp используя сокеты
@@ -615,6 +611,14 @@ class Mail
 		}
 		$this->fullBody .= implode($sep, $ata);
 	}
+    
+    public function __destruct()
+    {
+        if (!$this->smtp_log) return;         
+        $fp = fopen("smtp.log", "w");  
+        fwrite($fp, $this->smtp_log);  
+        fclose($fp); 
+    }
 
 
 } // class Mail
