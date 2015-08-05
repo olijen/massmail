@@ -23,7 +23,7 @@
         <!--Вы можете отослать: <br />
         1) Всем юзерам - <input type="checkbox" name="all" value="1"/><br /><br />
         2) -->
-        На базу емейлов<br /><textarea name="email" placeholder="Адреса через запятую" cols="60" rows="2" wrap="virtual"></textarea><br /><br />
+        На базу емейлов<br /><textarea name="email" placeholder="Адреса через точку с запятой" cols="60" rows="2" wrap="virtual"></textarea><br /><br />
         Начиная с : <br /><input type="datetime-local" name="from_date" /><br /><br />
 
         От: <br /><select size="1" name="from">
