@@ -1,21 +1,18 @@
 <?php
 
 $CONFIG = array(
-  
+
+    'SITENAME' => 'http://'.$_SERVER['HTTP_HOST'],
+    'ROOTDIR'  => $_SERVER['DOCUMENT_ROOT'],
+    'APPDIR'   => $_SERVER['DOCUMENT_ROOT'].'/application',
+    'FRONTDIR' => $_SERVER['DOCUMENT_ROOT'].'/front',
+    
     'DB_NAME'  => 'massmail',
-    'DB_USER'  => 'igrolanc_root',
+    'DB_USER'  => 'root',
     'DB_HOST'  => 'localhost',
-    'DB_PWD'   => 'fackofphp5',
+    'DB_PWD'   => '',
     
 );
-
-if (!empty($_SERVER['HTTP_HOST'])) {
-    $CONFIG['SITENAME'] = 'http://'.$_SERVER['HTTP_HOST'];
-    $CONFIG['ROOTDIR']  = $_SERVER['DOCUMENT_ROOT'];
-    $CONFIG['APPDIR']   = $_SERVER['DOCUMENT_ROOT'].'/application';
-    $CONFIG['FRONTDIR'] = $_SERVER['DOCUMENT_ROOT'].'/front';
-}
-
 
 foreach ($CONFIG as $k => $v) {
     defined($k) or define($k, $v);
